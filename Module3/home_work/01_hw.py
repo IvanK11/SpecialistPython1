@@ -7,3 +7,9 @@ names = ["Иван", "Ирина", "Вячеслав", "Василий", "Пет
 
 # Пример вывода:
 # Иван, Ирина, Вячеслав, Василий, Петр
+
+words = ""
+for name in names:
+    words += name + ", "
+words = words [:len(words)-2]
+print(words)
