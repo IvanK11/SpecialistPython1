@@ -5,3 +5,13 @@
 # Пример:
 # Дано: [2, -5, 8, 9, -25, 25, 4]
 # Результат: [3, 5, 2]
+import random
+the_list = []
+num = 10
+i = 1
+while i <= num:
+    the_list.append (random.randint(-100, 100))
+    i += 1
+for el in the_list:
+    if el > 0 and el % el == 0:
+        print(el**2)
